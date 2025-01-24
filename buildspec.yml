@@ -5,7 +5,12 @@ run-as: root
 phases:
   build:
     commands:
-      - ls -al
+      - pwsh
+      - Install-Module Pester -Force
+      - Import-Module Pester -PassThru
+      - echo "Remember to change directories in real thing."
+      - Invoke-Pester
+      - exit
 
 artifacts:
   files:
