@@ -2,13 +2,10 @@ version: 0.2
 
 run-as: root
 
-env:
-  shell: pwsh
-
 phases:
   build:
     commands:
-      - Invoke-Pester
+      - pwsh Invoke-Pester
 
 artifacts:
   files:
