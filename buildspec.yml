@@ -1,9 +1,14 @@
 version: 0.2
 
+run-as: root
+
+env:
+  shell: pwsh
+
 phases:
   build:
     commands:
-      - Get-ChildItem
+      - Invoke-Pester
 
 artifacts:
   files:
