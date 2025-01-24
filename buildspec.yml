@@ -5,7 +5,7 @@ run-as: root
 phases:
   build:
     commands:
-      - pwsh Invoke-Pester
+      - pwsh Get-ChildItem
 
 artifacts:
   files:
