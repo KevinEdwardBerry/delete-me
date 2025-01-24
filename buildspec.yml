@@ -5,7 +5,7 @@ run-as: root
 phases:
   build:
     commands:
-      - pwsh Get-ChildItem
+      - ls -al
 
 artifacts:
   files:
