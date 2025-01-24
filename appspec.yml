@@ -1,0 +1,13 @@
+version: 0.0
+
+os: windows
+
+files:
+  - source: Invoke-DisplayType.ps1
+    destination: C:\DeployHere\Type*\
+  - source: type1.config.json
+    destination: C:\DeployHere\Type1\
+  - source: type2.config.json
+    destination: C:\DeployHere\Type2\
+  - source: type3.config.json
+    destination: C:\DeployHere\Type3\
