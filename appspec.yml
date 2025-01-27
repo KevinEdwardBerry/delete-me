@@ -4,10 +4,10 @@ os: windows
 
 files:
   - source: \Invoke-DisplayType.ps1
-    destination: C:\DeployHere\Type*\
+    destination: C:\Temp\DeployHere\Type*\
   - source: \type1.config.json
-    destination: C:\DeployHere\Type1\
+    destination: C:\Temp\DeployHere\Type1\
   - source: \type2.config.json
-    destination: C:\DeployHere\Type2\
+    destination: C:\Temp\DeployHere\Type2\
   - source: \type3.config.json
-    destination: C:\DeployHere\Type3\
+    destination: C:\Temp\DeployHere\Type3\
