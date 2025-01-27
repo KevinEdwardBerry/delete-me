@@ -1,5 +1,11 @@
 version: 0.0
 os: linux
 files:
-  - source: .
-    destination: /opt/deploy-here
+  - source: Invoke-DisplayType.ps1
+    destination: /opt/deploy-here/Invoke-DisplayType.ps1
+  - source: type1.config.json
+    destination: /opt/deploy-here/type1/type1.config.json
+  - source: type2.config.json
+    destination: /opt/deploy-here/type2/type2.config.json
+  - source: type3.config.json
+    destination: /opt/deploy-here/type3/type3.config.json
