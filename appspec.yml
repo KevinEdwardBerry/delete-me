@@ -1,7 +1,13 @@
 version: 0.0
 
-os: windows
+os: linux
 
 files:
-  - source: .
-    destination: C:\Temp\
+  - source: /Invoke-DisplayType.ps1
+    destination: /opt/deploy-here/type*/
+  - source: /type1.config.json
+    destination: /opt/deploy-here/type1/
+  - source: /type2.config.json
+    destination: /opt/deploy-here/type2/
+  - source: /type3.config.json
+    destination: /opt/deploy-here/type3/
