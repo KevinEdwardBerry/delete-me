@@ -8,12 +8,8 @@ phases:
       - pwsh -command "Install-Module Pester -Force"
       - pwsh -command "Import-Module Pester -PassThru"
       - echo "Remember to change directories in real thing."
-      - pwsh -command "$pesterConfig = New-PesterConfiguration"
-      - pwsh -command "$pesterConfig.TestResults.Enabled = $true"
-      - pwsh -command "Invoke-Pester -Configuration $pesterConfig"
-      - hasNoErrors=$(grep -c "errors=\"0\"" testResults.xml)
-      - hasNoFailures=$(grep -c "failures=\"0\"" testResults.xml)
-      - if [ $hasNoErrors -ne 1 ] || [ $hasNoFailures -ne 1 ]; then exit 1
+      - pwsh ./Build.ps1
+      - ./check_test_results.sh
     on-failure: ABORT
 
 artifacts:
