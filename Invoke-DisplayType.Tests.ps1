@@ -1,5 +1,10 @@
 Describe 'Invoke-DisplayType' {
-    It 'Returns passthru' {
-        # Do nothing
+    It 'Returns success' {
+        # Passes
+        $true | Should -BeTrue
+    }
+    It 'Returns failure' {
+        # Fails
+        $true | Should -BeFalse
     }
 }
