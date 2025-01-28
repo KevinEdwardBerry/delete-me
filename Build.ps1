@@ -1,4 +1,4 @@
 $pesterConfig = New-PesterConfiguration
-$pesterConfig.TestResults.Enabled = $true
+$pesterConfig.TestResult.Enabled = $true
 
 Invoke-Pester -Configuration $pesterConfig
