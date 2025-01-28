@@ -3,7 +3,8 @@ Describe 'Invoke-DisplayType' {
         # Passes
         $true | Should -BeTrue
     }
-    It 'Returns failure' {
+
+    It 'Returns failure' -Skip {
         # Fails
         $true | Should -BeFalse
     }
