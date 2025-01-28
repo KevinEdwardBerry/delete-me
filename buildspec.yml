@@ -9,6 +9,7 @@ phases:
       - pwsh -command "Import-Module Pester -PassThru"
       - echo "Remember to change directories in real thing."
       - pwsh -command "Invoke-Pester"
+    on-failure: ABORT
 
 artifacts:
   files:
