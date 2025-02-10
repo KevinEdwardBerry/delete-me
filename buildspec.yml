@@ -5,7 +5,7 @@ run-as: root
 phases:
   build:
     commands:
-      - echo "root"
+      - echo "root 2"
 
 artifacts:
   files:
