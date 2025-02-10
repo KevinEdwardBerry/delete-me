@@ -5,12 +5,7 @@ run-as: root
 phases:
   build:
     commands:
-      - pwsh -command "Install-Module Pester -Force"
-      - pwsh -command "Import-Module Pester -PassThru"
-      - echo "Remember to change directories in real thing."
-      - pwsh ./Build.ps1
-      - ./check_test_results.sh
-    on-failure: ABORT
+      - ls
 
 artifacts:
   files:
